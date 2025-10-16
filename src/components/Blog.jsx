@@ -56,6 +56,50 @@ const BlogCard = ({ index, post, onOpen }) => {
   );
 };
 
+const renderContentBlock = (block, index) => {
+  switch (block?.type) {
+    case "heading":
+      return (
+        <h3
+          key={`heading-${index}`}
+          className="text-white text-[20px] font-semibold leading-[30px]"
+        >
+          {block.text}
+        </h3>
+      );
+    case "paragraph":
+      return (
+        <p
+          key={`paragraph-${index}`}
+          className="text-secondary text-[15px] leading-[28px]"
+        >
+          {block.text}
+        </p>
+      );
+    case "list":
+      return (
+        <ul
+          key={`list-${index}`}
+          className="list-disc list-inside text-secondary text-[15px] leading-[26px] space-y-2 pl-4"
+        >
+          {(block.items || []).map((item, itemIndex) => (
+            <li key={`list-${index}-${itemIndex}`}>{item}</li>
+          ))}
+        </ul>
+      );
+    case "code":
+      return (
+        <pre
+          key={`code-${index}`}
+          className="bg-black-100/40 border border-white/10 rounded-xl p-4 overflow-auto text-[13px] leading-[22px] text-secondary"
+        >
+          <code>{block.code}</code>
+        </pre>
+      );
+    default:
+      return null;
+  }
+};
 
 const Blog = () => {
   const [openPost, setOpenPost] = useState(null);
@@ -99,11 +143,21 @@ const Blog = () => {
                 <span key={`${openPost.id}-${t}`} className='px-2 py-[2px] rounded-md bg-black-100/40'>#{t}</span>
               ))}
             </div>
-            <div className='mt-6 prose prose-invert max-w-none'>
-              <p>
-                Đây là nội dung demo trong modal. Bạn có thể mở rộng bằng trường `content` trong `blogs` để hiển thị phong phú hơn, bao gồm markdown.
-              </p>
+            <div className='mt-6 space-y-4'>
+              {(openPost.content || []).map((block, i) => renderContentBlock(block, i))}
             </div>
+            {openPost.link && (
+              <div className='mt-6'>
+                <a
+                  href={openPost.link}
+                  target='_blank'
+                  rel='noreferrer'
+                  className='inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[#915EFF]/20 text-[#CBB6FF] hover:bg-[#915EFF]/30 transition-colors border border-[#915EFF]/30'
+                >
+                  Đọc thêm nguồn tham khảo
+                </a>
+              </div>
+            )}
           </div>
         )}
       </Modal>
