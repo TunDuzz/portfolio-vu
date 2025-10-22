@@ -34,8 +34,8 @@ export const navLinks = [
     title: "Blog",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "certifications",
+    title: "Certifications",
   },
   {
     id: "contact",
@@ -171,30 +171,99 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "“The people who are crazy enough to think they can change the world are the ones who do.”",
-    name: "Steve Jobs",
-    designation: "Co-founder",
-    company: "Apple Inc.",
-    image: "https://randomuser.me/api/portraits/men/3.jpg",
+      "“Thành công không phải là đích đến, mà là hành trình bạn không ngừng cố gắng mỗi ngày.”",
+    name: "Nguyễn Hiến",
+    designation: "Entrepreneur",
+    company: "VN Startup",
+    image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "“Programs must be written for people to read, and only incidentally for machines to execute.”",
-    name: "Harold Abelson",
-    designation: "Professor",
-    company: "MIT",
-    image: "https://randomuser.me/api/portraits/men/11.jpg",
+      "“Đừng sợ thất bại. Thất bại chỉ là cơ hội để bắt đầu lại một cách thông minh hơn.”",
+    name: "Henry Ford",
+    designation: "Founder",
+    company: "Ford Motor Company",
+    image: "https://randomuser.me/api/portraits/men/15.jpg",
   },
   {
     testimonial:
-      "“Any sufficiently advanced technology is indistinguishable from magic.”",
-    name: "Arthur C. Clarke",
-    designation: "Science Fiction Writer",
-    company: "Author of 2001: A Space Odyssey",
-    image: "https://randomuser.me/api/portraits/men/27.jpg",
+      "“Khi bạn muốn bỏ cuộc, hãy nhớ lý do vì sao bạn bắt đầu.”",
+    name: "Tony Robbins",
+    designation: "Motivational Speaker",
+    company: "Life Coach International",
+    image: "https://randomuser.me/api/portraits/men/19.jpg",
   },
 ];
 
+
+const certificates = [
+  {
+    name: "JavaScript Essentials 1",
+    issuer: "Cisco Networking Academy",
+    date: "Tháng 9/2025",
+    description: "Chứng chỉ cơ bản về JavaScript, bao gồm syntax, variables, functions, objects và DOM manipulation. Đây là bước đầu tiên trong hành trình học JavaScript.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Programming",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Web Development",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "/certificates/js1.png",
+    verification_link: "https://www.credly.com/badges/55262120-2d8e-43c3-b6b1-395fae420605/public_url",
+  },
+  {
+    name: "JavaScript Essentials 2",
+    issuer: "Cisco Networking Academy",
+    date: "Tháng 10/2025",
+    description: "Chứng chỉ nâng cao về JavaScript, bao gồm ES6+, async programming, modules, error handling và advanced concepts để phát triển ứng dụng web hiện đại.",
+    tags: [
+      {
+        name: "JavaScript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "ES6+",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Async Programming",
+        color: "green-text-gradient",
+      },
+    ],
+    image: "/certificates/js2.png",
+    verification_link: "https://www.credly.com/badges/6b874cc2-3dec-43b0-bf4e-150c17f3a23d/public_url",
+  },
+  {
+    name: "Networking Basics",
+    issuer: "Cisco Networking Academy",
+    date: "Tháng 9/2025",
+    description: "Chứng chỉ cơ bản về mạng máy tính, bao gồm TCP/IP, routing, switching, network protocols và troubleshooting. Nền tảng quan trọng cho DevOps và Cloud Computing.",
+    tags: [
+      {
+        name: "Networking",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TCP/IP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "DevOps",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "/certificates/network.png",
+    verification_link: "https://www.credly.com/badges/2a47bf8e-c3af-48f9-b37f-89b508684c07/public_url",
+  },
+];
 
 const projects = [
   {
@@ -1648,5 +1717,5 @@ public int divide(int a, int b) {
 },
 ];
 
-export { services, technologies, experiences, testimonials, projects, blogs };
+export { services, technologies, experiences, testimonials, projects, certificates, blogs };
 
