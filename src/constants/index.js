@@ -10,10 +10,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -110,7 +106,7 @@ const projects = [
   {
     title: "E-Commerce Web Application",
     company_name: "ASP.NET Core MVC + SQL Server",
-    icon: tesla,
+    icon: dotnet,
     iconBg: "#E6DEDD",
     date: "Feb 2024 - May 2024",
     points: [
@@ -123,7 +119,7 @@ const projects = [
   {
     title: "Portfolio Website",
     company_name: "React.js + Three.js + Tailwind CSS",
-    icon: shopify,
+    icon: reactjs,
     iconBg: "#383E56",
     date: "Dec 2024 - Present",
     points: [
@@ -136,7 +132,7 @@ const projects = [
   {
     title: "Gomoku Online Game",
     company_name: "ASP.NET Core SignalR + ReactJS",
-    icon: meta,
+    icon: nodejs,
     iconBg: "#E6DEDD",
     date: "Sep 2024 - Dec 2024",
     points: [
@@ -149,7 +145,7 @@ const projects = [
   {
     title: "Noctune Music Platform",
     company_name: "React.js + Tailwind CSS + Music API",
-    icon: starbucks,
+    icon: javascript,
     iconBg: "#383E56",
     date: "Oct 2024 - Dec 2024",
     points: [
@@ -162,7 +158,7 @@ const projects = [
   {
     title: "Java Learning Projects",
     company_name: "Java 8+ + Spring Boot + MySQL",
-    icon: tesla,
+    icon: java,
     iconBg: "#E6DEDD",
     date: "Aug 2024 - Nov 2024",
     points: [

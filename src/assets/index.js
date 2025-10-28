@@ -23,10 +23,7 @@ import java from "./tech/java.svg";
 import csharp from "./tech/csharp.svg";
 import dotnet from "./tech/dotnet.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+// Company icons removed - using tech icons instead
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -56,10 +53,7 @@ export {
   java,
   csharp,
   dotnet,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
+  // Company icons removed
   carrent,
   jobit,
   tripguide,
