@@ -72,8 +72,43 @@ const Contact = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Liên hệ với tôi</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div className="text-center mb-8 relative">
+          {/* Background glow effect */}
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] 
+            bg-gradient-to-r from-[#915EFF]/20 via-[#7c3aed]/20 to-[#00BFFF]/20 
+            blur-3xl rounded-full opacity-50" />
+          
+          <div className="relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="inline-block"
+            >
+              <span className={`${styles.sectionSubText} text-[#915EFF] font-medium tracking-wider`}>
+                📬 Kết nối với tôi
+              </span>
+            </motion.div>
+            
+            <motion.h3 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="text-[40px] sm:text-[50px] lg:text-[60px] font-black leading-tight mt-2
+                bg-gradient-to-r from-[#915EFF] via-[#7c3aed] to-[#00BFFF] 
+                bg-clip-text text-transparent"
+            >
+              Contact
+            </motion.h3>
+            
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="mt-2 h-1 w-32 mx-auto bg-gradient-to-r from-transparent via-[#915EFF] to-transparent rounded-full"
+            />
+          </div>
+        </div>
 
         <form
           ref={formRef}

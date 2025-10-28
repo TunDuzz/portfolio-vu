@@ -4,6 +4,12 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      fontFamily: {
+        'sans': ['Be Vietnam Pro', 'Poppins', 'Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
+        'poppins': ['Be Vietnam Pro', 'Poppins', 'sans-serif'],
+        'inter': ['Be Vietnam Pro', 'Inter', 'sans-serif'],
+        'vietnamese': ['Be Vietnam Pro', 'sans-serif'],
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",

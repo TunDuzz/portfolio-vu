@@ -1,5 +1,6 @@
 import React from "react";
-import { About, Blog, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "../components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, PortfolioShowcase, StarsCanvas } from "../components";
+import FeedbackWidget from "../components/FeedbackWidget";
 
 const Home = () => {
   return (
@@ -9,15 +10,16 @@ const Home = () => {
         <Hero />
       </div>
       <About />
-      <Tech />
+      <PortfolioShowcase />
       <Experience />
-      <Blog />
-      <Works />
       <Feedbacks />
       <div className='relative z-0'>
         <Contact />
         <StarsCanvas />
       </div>
+      
+      {/* Feedback Widget - floating button */}
+      <FeedbackWidget />
     </div>
   );
 };

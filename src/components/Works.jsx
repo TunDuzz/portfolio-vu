@@ -15,6 +15,7 @@ const CertificateCard = ({
   description,
   tags,
   image,
+  detail_image,
   verification_link,
 }) => {
   const [showModal, setShowModal] = useState(false);
@@ -89,7 +90,7 @@ const CertificateCard = ({
         </Tilt>
       </motion.div>
 
-      {/* --- MODAL HIỂN THỊ ẢNH CHỨNG CHỈ --- */}
+      {/* --- MODAL HIỂN THỊ ẢNH CHỨNG CHỈ CHI TIẾT --- */}
       {showModal && (
         <div
           className="fixed inset-0 bg-black/80 backdrop-blur-sm flex justify-center items-center z-[999]"
@@ -99,19 +100,19 @@ const CertificateCard = ({
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3 }}
-            className="relative bg-white/10 p-4 rounded-2xl shadow-lg max-w-3xl"
+            className="relative bg-white/10 p-4 rounded-2xl shadow-lg max-w-4xl w-full mx-4"
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={image}
+              src={detail_image || image}
               alt="certificate_full"
-              className="rounded-xl max-h-[80vh] w-auto mx-auto object-contain"
+              className="rounded-xl max-h-[85vh] w-auto mx-auto object-contain"
             />
             <button
               onClick={() => setShowModal(false)}
-              className="absolute top-3 right-3 bg-red-500 hover:bg-red-600 text-white font-semibold px-3 py-1 rounded-md"
+              className="absolute top-4 right-4 bg-red-500 hover:bg-red-600 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center transition-all"
             >
-              X
+              ×
             </button>
           </motion.div>
         </div>

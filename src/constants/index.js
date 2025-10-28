@@ -1,8 +1,4 @@
 import {
-  mobile,
-  backend,
-  creator,
-  web,
   javascript,
   typescript,
   html,
@@ -22,6 +18,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  java,
+  csharp,
+  dotnet,
 } from "../assets";
 
 export const navLinks = [
@@ -30,12 +29,16 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "blog",
-    title: "Blog",
+    id: "portfolio",
+    title: "Portfolio",
   },
   {
-    id: "certifications",
-    title: "Certifications",
+    id: "work",
+    title: "Projects",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonials",
   },
   {
     id: "contact",
@@ -43,24 +46,6 @@ export const navLinks = [
   },
 ];
 
-const services = [
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
-];
 
 const technologies = [
   {
@@ -92,6 +77,18 @@ const technologies = [
     icon: nodejs,
   },
   {
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "C#",
+    icon: csharp,
+  },
+  {
+    name: ".NET",
+    icon: dotnet,
+  },
+  {
     name: "MongoDB",
     icon: mongodb,
   },
@@ -107,42 +104,38 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
-const experiences = [
+const projects = [
   {
-    title: "Backend Developer (Course Project)",
-    company_name: "Web Bán Hàng – HUTECH",
+    title: "E-Commerce Web Application",
+    company_name: "ASP.NET Core MVC + SQL Server",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Feb 2024 - May 2024",
     points: [
-      "Phát triển hệ thống quản lý danh mục và sản phẩm sử dụng ASP.NET Core MVC và SQL Server.",
+      "Phát triển hệ thống quản lý danh mục và sản phẩm hoàn chỉnh với ASP.NET Core MVC.",
       "Tích hợp ASP.NET Core Identity cho chức năng đăng nhập và phân quyền (Admin/User).",
       "Thực hiện seed dữ liệu mẫu, xử lý CRUD đầy đủ với Entity Framework Core.",
-      "Đảm bảo giao diện quản trị dễ dùng và hệ thống hoạt động ổn định.",
+      "Đảm bảo giao diện quản trị thân thiện và hệ thống hoạt động ổn định.",
     ],
   },
   {
-    title: "Internship & Research",
-    company_name: "HUTECH University",
+    title: "Portfolio Website",
+    company_name: "React.js + Three.js + Tailwind CSS",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jun 2024 - Aug 2024",
+    date: "Dec 2024 - Present",
     points: [
-      "Thực hành và nghiên cứu các công nghệ như Java, .NET, và React trong môi trường học thuật.",
-      "Xây dựng mini project mô phỏng giao thức FTP và hệ thống Chat Socket trong Java.",
-      "Tìm hiểu và ứng dụng cơ chế đồng bộ hóa, xử lý đa luồng và thuật toán mã hóa.",
-      "Nâng cao kỹ năng teamwork, sử dụng Git/GitHub và viết tài liệu kỹ thuật chi tiết.",
+      "Xây dựng portfolio website tương tác với React.js và Three.js cho hiệu ứng 3D.",
+      "Sử dụng Tailwind CSS để tạo giao diện responsive và hiện đại.",
+      "Tích hợp Framer Motion cho animation mượt mà và trải nghiệm người dùng tốt.",
+      "Tối ưu hóa performance và SEO cho website cá nhân.",
     ],
   },
   {
-    title: "Full Stack Developer (Graduation Project)",
-    company_name: "Gomoku Online",
+    title: "Gomoku Online Game",
+    company_name: "ASP.NET Core SignalR + ReactJS",
     icon: meta,
     iconBg: "#E6DEDD",
     date: "Sep 2024 - Dec 2024",
@@ -154,16 +147,29 @@ const experiences = [
     ],
   },
   {
-    title: "Frontend Developer (Main Project – Noctune Music Platform)",
-    company_name: "Noctune Music Platform",
+    title: "Noctune Music Platform",
+    company_name: "React.js + Tailwind CSS + Music API",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "Jan 2025 - Present",
+    date: "Oct 2024 - Dec 2024",
     points: [
-      "Thiết kế và phát triển giao diện web nghe nhạc cá nhân hóa (giống Spotify) sử dụng React.js, Tailwind CSS và ASP.NET Core API.",
-      "Xây dựng các tính năng: đăng nhập, phát nhạc, playlist, dark mode, premium user và thanh toán tích hợp (VNPay / MoMo / PayPal).",
-      "Phối hợp nhóm 4 thành viên thông qua GitHub để quản lý tiến độ và review code.",
-      "Tối ưu hiệu năng, UI/UX và tích hợp gợi ý nhạc thông minh bằng AI Recommendation.",
+      "Phát triển giao diện người dùng cho nền tảng âm nhạc sử dụng React.js và Tailwind CSS.",
+      "Tích hợp API âm nhạc và xây dựng các tính năng phát nhạc, playlist, và tìm kiếm.",
+      "Tối ưu hóa trải nghiệm người dùng với animation mượt mà và responsive design.",
+      "Làm việc với team để đảm bảo tích hợp frontend-backend hoàn hảo.",
+    ],
+  },
+  {
+    title: "Java Learning Projects",
+    company_name: "Java 8+ + Spring Boot + MySQL",
+    icon: tesla,
+    iconBg: "#E6DEDD",
+    date: "Aug 2024 - Nov 2024",
+    points: [
+      "Phát triển các ứng dụng Java sử dụng Collections Framework và Stream API.",
+      "Xây dựng REST API với Spring Boot và kết nối cơ sở dữ liệu MySQL.",
+      "Thực hành xử lý đa luồng, đồng bộ hóa và thuật toán mã hóa trong Java.",
+      "Tạo mini projects mô phỏng FTP và Chat Socket để học networking concepts.",
     ],
   },
 ];
@@ -209,15 +215,16 @@ const certificates = [
       },
       {
         name: "Programming",
-        color: "blue-text-gradient",
+        color: "#56ccf2",
       },
       {
         name: "Web Development",
-        color: "green-text-gradient",
+        color: "#38ef7d",
       },
     ],
-    image: "/certificates/js1.png",
-    verification_link: "https://www.credly.com/badges/55262120-2d8e-43c3-b6b1-395fae420605/public_url",
+    image: "/certificates/JSE1.png",
+    detail_image: "/certificates/js1.png",
+    verification_link: "https://www.credly.com/earner/earned/share/55262120-2d8e-43c3-b6b1-395fae420605",
   },
   {
     name: "JavaScript Essentials 2",
@@ -231,15 +238,16 @@ const certificates = [
       },
       {
         name: "ES6+",
-        color: "blue-text-gradient",
+        color: "#56ccf2",
       },
       {
         name: "Async Programming",
-        color: "green-text-gradient",
+        color: "#38ef7d",
       },
     ],
-    image: "/certificates/js2.png",
-    verification_link: "https://www.credly.com/badges/6b874cc2-3dec-43b0-bf4e-150c17f3a23d/public_url",
+    image: "/certificates/JSE2.png",
+    detail_image: "/certificates/js2.png",
+    verification_link: "https://www.credly.com/earner/earned/share/6b874cc2-3dec-43b0-bf4e-150c17f3a23d",
   },
   {
     name: "Networking Basics",
@@ -249,114 +257,50 @@ const certificates = [
     tags: [
       {
         name: "Networking",
-        color: "blue-text-gradient",
+        color: "#56ccf2",
       },
       {
         name: "TCP/IP",
-        color: "green-text-gradient",
+        color: "#38ef7d",
       },
       {
         name: "DevOps",
-        color: "pink-text-gradient",
+        color: "#fc6767",
       },
     ],
-    image: "/certificates/network.png",
-    verification_link: "https://www.credly.com/badges/2a47bf8e-c3af-48f9-b37f-89b508684c07/public_url",
+    image: "/certificates/NWB.png",
+    detail_image: "/certificates/network.png",
+    verification_link: "https://www.credly.com/earner/earned/share/2a47bf8e-c3af-48f9-b37f-89b508684c07",
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
 
 // Blog posts data for Blog section
 const blogs = [
   // 1️⃣ Java Collections Framework
- {
+  {
   id: "java-collections-overview",
-  category: "Java",
+    category: "Java",
   title: "Tổng quan về Collections trong Java",
-  description:
+    description:
     "Java Collection Framework là nền tảng mạnh mẽ giúp lập trình viên thao tác với tập hợp dữ liệu như List, Set, Queue, Map một cách hiệu quả, linh hoạt và có thể mở rộng.",
   date: "02/04/2021",
   readTime: "15 phút đọc",
   tags: ["Java", "Collections", "Framework", "List", "Set", "Map"],
   link: "https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html",
-  content: [
+    content: [
     { type: "heading", text: "1. Giới thiệu Java Collection Framework" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Java Collection Framework (JCF) là một phần cốt lõi trong thư viện chuẩn của Java, cung cấp các cấu trúc dữ liệu và thuật toán phổ biến để làm việc với tập hợp dữ liệu (collections) như List, Set, Queue, Map. Nó được thiết kế để giúp việc thao tác, tìm kiếm, sắp xếp và quản lý dữ liệu trở nên dễ dàng, hiệu quả và có thể mở rộng."
-    },
-    {
-      type: "paragraph",
+      },
+      {
+        type: "paragraph",
       text: "Framework này bao gồm ba thành phần chính: Interface, Implementation (Class cụ thể), và Algorithms (các thuật toán xử lý dữ liệu). Ngoài ra, Java Collection còn hỗ trợ Map – một cấu trúc key-value hữu ích cho việc ánh xạ dữ liệu."
-    },
-    {
-      type: "list",
-      items: [
+      },
+      {
+        type: "list",
+        items: [
         "Hiệu năng cao – nhờ sử dụng các cấu trúc dữ liệu như mảng động, linked list, cây (tree) và bảng băm (hash table).",
         "Tính trừu tượng – cho phép các kiểu tập hợp khác nhau hoạt động tương tự thông qua interface.",
         "Tái sử dụng và mở rộng dễ dàng – có thể kế thừa hoặc tùy chỉnh lại các class và interface sẵn có."
@@ -372,15 +316,15 @@ const blogs = [
       type: "paragraph",
       text: "Collection Interface là nền tảng cơ bản trong Java Collection Framework, định nghĩa các phương thức cơ bản để làm việc với tập hợp dữ liệu như thêm, xóa, kiểm tra kích thước, duyệt phần tử, v.v. Nó kế thừa từ interface Iterable, vì vậy bạn có thể duyệt qua từng phần tử bằng Iterator hoặc vòng lặp for-each."
     },
-    {
-      type: "code",
-      language: "java",
+      {
+        type: "code",
+        language: "java",
       code: "Collection<String> names = new ArrayList<>();\nnames.add(\"Vũ\");\nnames.add(\"Minh\");\nfor (String name : names) {\n    System.out.println(name);\n}"
-    },
+      },
 
     { type: "heading", text: "3. Set Interface" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Set là một tập hợp không chứa phần tử trùng lặp, tương tự như khái niệm tập hợp trong toán học. Set kế thừa từ Collection Interface và có các class triển khai phổ biến sau:"
     },
     {
@@ -398,8 +342,8 @@ const blogs = [
     },
 
     { type: "heading", text: "4. List Interface" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "List là một tập hợp có thứ tự (ordered), cho phép phần tử trùng lặp và có thể truy cập bằng chỉ số (index). Đây là kiểu cấu trúc dữ liệu phổ biến nhất khi làm việc với danh sách trong Java."
     },
     {
@@ -482,9 +426,9 @@ const blogs = [
   // 2️⃣ Arrow Functions và This Context
   {
   id: "js-arrow-functions",
-  category: "JavaScript",
+    category: "JavaScript",
   title: "JavaScript: Arrow Function Expressions – Viết hàm ngắn gọn và tối ưu hơn",
-  description:
+    description:
     "Arrow function là cú pháp rút gọn của function expression trong JavaScript. Bài viết này hướng dẫn cách sử dụng, cú pháp, sự khác biệt về this, arguments và các giới hạn của arrow function.",
   date: "10/05/2024",
   readTime: "15 phút đọc",
@@ -635,18 +579,18 @@ const blogs = [
   // 3️⃣ Spring Boot REST API
   {
   id: "spring-boot-rest-api-mysql",
-  category: "Java",
+    category: "Java",
   title: "Tạo REST API với Spring Boot + MySQL + JPA Repository",
-  description:
+    description:
     "Hướng dẫn từng bước xây dựng REST API đơn giản với Spring Boot, MySQL và JPA Repository. Từ cấu hình Maven, tạo model, service, controller cho đến test API bằng Postman.",
   date: "15/03/2021",
   readTime: "15 phút đọc",
   tags: ["Spring Boot", "Java", "MySQL", "JPA", "REST API"],
   link: "https://www.baeldung.com/spring-boot-building-restful-web-services",
-  content: [
+    content: [
     { type: "heading", text: "Giới thiệu" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Spring Boot là một trong những dự án nổi bật nhất của hệ sinh thái Spring Framework. Nó giúp đơn giản hóa việc khởi tạo và cấu hình ứng dụng Java. Nếu như trước đây, bạn phải cấu hình XML, khởi tạo servlet container, thêm hàng chục dependency thì giờ đây Spring Boot đã tự động hóa toàn bộ quá trình đó. Bạn chỉ cần tập trung vào business logic."
     },
     {
@@ -658,9 +602,9 @@ const blogs = [
         "Starter dependency giúp setup nhanh chóng",
         "Không cần XML, chỉ cần annotation"
       ]
-    },
-    {
-      type: "paragraph",
+      },
+      {
+        type: "paragraph",
       text: "Trong bài viết này, chúng ta sẽ xây dựng REST API CRUD cơ bản (Create, Read, Update, Delete) với Spring Boot, JPA và MySQL."
     },
 
@@ -676,9 +620,9 @@ const blogs = [
       type: "paragraph",
       text: "Truy cập Spring Initializr tại https://start.spring.io/ và chọn cấu hình sau:"
     },
-    {
-      type: "list",
-      items: [
+      {
+        type: "list",
+        items: [
         "Group: com.example",
         "Artifact: demo",
         "Dependencies: Spring Web, Spring Data JPA, MySQL Driver",
@@ -698,13 +642,13 @@ const blogs = [
     },
 
     { type: "heading", text: "4. File main: DemoApplication.java" },
-    {
-      type: "code",
-      language: "java",
+      {
+        type: "code",
+        language: "java",
       code: "package com.example.demo;\n\nimport org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication(scanBasePackages = {\"com.example.demo\"})\npublic class DemoApplication {\n  public static void main(String[] args) {\n    SpringApplication.run(DemoApplication.class, args);\n  }\n}"
-    },
-    {
-      type: "paragraph",
+      },
+      {
+        type: "paragraph",
       text: "Annotation @SpringBootApplication là sự kết hợp giữa @Configuration, @EnableAutoConfiguration và @ComponentScan. Nhờ đó, Spring Boot có thể tự động quét, cấu hình và khởi chạy ứng dụng mà không cần XML."
     },
 
@@ -714,8 +658,8 @@ const blogs = [
       language: "properties",
       code: "spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver\nspring.datasource.url=jdbc:mysql://localhost:3306/test\nspring.datasource.username=root\nspring.datasource.password=\nspring.jpa.hibernate.ddl-auto=update\nspring.jpa.show-sql=true"
     },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "File application.properties lưu cấu hình kết nối MySQL. Thay đổi username, password, database name cho phù hợp."
     },
 
@@ -787,9 +731,9 @@ const blogs = [
   // 4️⃣ Async/Await
   {
   id: "js-async-await-deep",
-  category: "JavaScript",
+    category: "JavaScript",
   title: "JavaScript: async/await – những keyword giúp chúng ta code bất đồng bộ dễ hơn bao giờ hết",
-  description:
+    description:
     "Tìm hiểu cách hoạt động của async/await trong JavaScript, từ generator đến Promise, giúp bạn viết code bất đồng bộ dễ đọc và hiệu quả hơn.",
   date: "17/07/2018",
   readTime: "15 phút đọc",
@@ -934,25 +878,25 @@ const blogs = [
 
   // 5️⃣ Java Stream API
   {
-  id: "java-stream-api",
-  category: "Java",
+    id: "java-stream-api",
+    category: "Java",
   title: "Tổng quan về Stream API trong Java 8",
-  description:
+    description:
     "Giới thiệu Stream API trong Java 8 – một tính năng mạnh mẽ giúp xử lý dữ liệu trong collection theo cách ngắn gọn, dễ đọc và hiệu quả hơn.",
   date: "10/07/2024",
   readTime: "12 phút đọc",
   tags: ["Java", "Stream API", "Functional Programming"],
   link: "https://www.baeldung.com/java-8-streams",
-  content: [
+    content: [
     { type: "heading", text: "Giới thiệu" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Stream API là một trong những tính năng nổi bật của Java 8, được giới thiệu trong package java.util.stream. Nó cho phép xử lý dữ liệu tuần tự hoặc song song trên các collection theo cách khai báo, thay vì lặp thủ công. Stream giúp code ngắn gọn, dễ hiểu, đồng thời tối ưu hiệu năng khi làm việc với tập dữ liệu lớn."
-    },
+      },
 
     { type: "heading", text: "1. Cách Stream hoạt động" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Stream đại diện cho một luồng dữ liệu (các phần tử trong collection) được xử lý qua một chuỗi các thao tác (pipeline). Một pipeline có thể bao gồm nhiều intermediate operation (như filter, map, sorted) và kết thúc bằng một terminal operation (như forEach, collect)."
     },
     {
@@ -970,13 +914,13 @@ const blogs = [
       type: "paragraph",
       text: "Stream có thể được tạo từ nhiều nguồn dữ liệu khác nhau, phổ biến nhất là từ Collection, Array hoặc trực tiếp bằng Stream.of."
     },
-    {
-      type: "code",
-      language: "java",
+      {
+        type: "code",
+        language: "java",
       code: "Arrays.asList(\"a\", \"aa\", \"aaa\")\n      .stream()\n      .findFirst()\n      .ifPresent(System.out::println);  // a\n\nStream.of(\"a\", \"aa\", \"aaa\")\n      .findFirst()\n      .ifPresent(System.out::println);  // a"
-    },
-    {
-      type: "paragraph",
+      },
+      {
+        type: "paragraph",
       text: "Ngoài ra, Java cung cấp các stream đặc biệt cho kiểu dữ liệu nguyên thủy như IntStream, LongStream và DoubleStream."
     },
     {
@@ -986,8 +930,8 @@ const blogs = [
     },
 
     { type: "heading", text: "3. Chuyển đổi giữa các loại Stream" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Bạn có thể dễ dàng chuyển đổi giữa Stream đối tượng và Stream nguyên thủy."
     },
     {
@@ -1053,11 +997,11 @@ const blogs = [
   // 6️⃣ React Hooks
   {
   id: "react-hooks-usestate-useeffect",
-  category: "JavaScript",
+    category: "JavaScript",
   title: "React Hooks: Hiểu rõ về useState và useEffect",
-  description:
+    description:
     "Tìm hiểu cách React Hooks như useState và useEffect giúp quản lý state và vòng đời component trong functional components, thay thế class component truyền thống.",
-  date: "12/08/2024",
+    date: "12/08/2024",
   readTime: "11 phút đọc",
   tags: ["JavaScript", "React", "Hooks"],
   link: "https://reactjs.org/docs/hooks-intro.html",
@@ -1153,20 +1097,20 @@ const blogs = [
 },
 
   // 7️⃣ JPA & Hibernate
-{
-  id: "jpa-hibernate",
-  category: "Java",
+  {
+    id: "jpa-hibernate",
+    category: "Java",
   title: "JPA và Hibernate: Quản lý database trong Java",
-  description:
+    description:
     "Hiểu cách JPA và Hibernate ánh xạ đối tượng Java sang bảng dữ liệu SQL, giúp thao tác với cơ sở dữ liệu dễ dàng và hiệu quả hơn.",
-  date: "05/08/2024",
+    date: "05/08/2024",
   readTime: "13 phút đọc",
   tags: ["Java", "JPA", "Hibernate"],
   link: "https://www.baeldung.com/hibernate-4-spring",
-  content: [
+    content: [
     { type: "heading", text: "Giới thiệu" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Trong Java, tương tác với cơ sở dữ liệu là nhiệm vụ thường xuyên. Viết trực tiếp SQL dễ gây khó bảo trì. JPA (Java Persistence API) và Hibernate giúp làm việc theo hướng đối tượng, giảm mã lặp và sai sót."
     },
     {
@@ -1179,9 +1123,9 @@ const blogs = [
       type: "paragraph",
       text: "JPA là API chuẩn cho việc lưu trữ, truy xuất và quản lý dữ liệu giữa đối tượng Java và cơ sở dữ liệu quan hệ."
     },
-    {
-      type: "list",
-      items: [
+      {
+        type: "list",
+        items: [
         "JPA là đặc tả, không phải framework.",
         "Cần implementation để chạy, ví dụ: Hibernate, EclipseLink, OpenJPA.",
         "Spring Data JPA cung cấp lớp trừu tượng để thao tác nhanh hơn."
@@ -1218,19 +1162,19 @@ const blogs = [
       type: "paragraph",
       text: "Ví dụ entity ánh xạ bảng users và repository tương ứng trong Spring Boot."
     },
-    {
-      type: "code",
-      language: "java",
+      {
+        type: "code",
+        language: "java",
       code: "@Entity\n@Table(name = \"users\")\npublic class User {\n  @Id\n  @GeneratedValue(strategy = GenerationType.IDENTITY)\n  private Long id;\n\n  private String name;\n  private String email;\n\n  @Column(name = \"created_at\")\n  private java.time.Instant createdAt = java.time.Instant.now();\n\n  // getters, setters\n}\n\npublic interface UserRepository extends org.springframework.data.jpa.repository.JpaRepository<User, Long> {\n  boolean existsByEmail(String email);\n}"
-    },
-    {
-      type: "paragraph",
+      },
+      {
+        type: "paragraph",
       text: "Với Spring Data JPA, chỉ cần khai báo interface, các truy vấn CRUD cơ bản sẽ được sinh tự động."
-    },
+      },
 
     { type: "heading", text: "5. CRUD với EntityManager (không dùng Spring Data)" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Có thể thao tác dữ liệu trực tiếp bằng EntityManager."
     },
     {
@@ -1297,9 +1241,9 @@ const blogs = [
   // 8️⃣ Closure và Scope
 {
   id: "js-scope-closures",
-  category: "JavaScript",
+    category: "JavaScript",
   title: "Hiểu rõ Scope và Closure trong JavaScript",
-  description:
+    description:
     "Giải thích dễ hiểu về phạm vi biến (scope) trong JavaScript và cách closure hoạt động — nền tảng quan trọng giúp bạn hiểu sâu về ngôn ngữ này.",
   date: "18/10/2024",
   readTime: "10 phút đọc",
@@ -1472,20 +1416,20 @@ const blogs = [
 },
 
   // 9️⃣ Exception Handling
-{
-  id: "java-exception-best-practices",
-  category: "Java",
+  {
+    id: "java-exception-best-practices",
+    category: "Java",
   title: "Xử lý Exception đúng cách trong Java",
-  description:
+    description:
     "Tổng hợp nguyên tắc và ví dụ giúp bạn xử lý exception hiệu quả, rõ ràng, dễ bảo trì – kỹ năng quan trọng cho mọi lập trình viên Java.",
-  date: "20/07/2024",
+    date: "20/07/2024",
   readTime: "12 phút đọc",
-  tags: ["Java", "Exception Handling"],
+    tags: ["Java", "Exception Handling"],
   link: "https://viblo.asia/p/xu-ly-exception-dung-cach-trong-java-obA46OxGJKv",
-  content: [
+    content: [
     { type: "heading", text: "Giới thiệu" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Xử lý exception một cách đúng đắn là phần quan trọng của việc viết code chất lượng trong Java, giúp đảm bảo tính ổn định và dễ bảo trì ứng dụng. Việc xử lý exception không chỉ giúp ứng dụng mạnh mẽ hơn mà còn giúp bạn dễ dàng theo dõi, phát hiện và sửa lỗi. Dưới đây là các nguyên tắc, ví dụ và hướng dẫn cụ thể mà bất kỳ lập trình viên nào cũng cần nắm vững.",
     },
 
@@ -1494,9 +1438,9 @@ const blogs = [
       type: "paragraph",
       text: "Theo Sun Microsystem, exception trong Java chia thành 3 loại chính: Checked Exception, Unchecked Exception và Error.",
     },
-    {
-      type: "list",
-      items: [
+      {
+        type: "list",
+        items: [
         "**1. Checked Exception** – Xảy ra do nguyên nhân ngoài tầm kiểm soát của lập trình viên (ví dụ: lỗi file, cơ sở dữ liệu). Được kiểm tra tại compile-time. Bao gồm: IOException, SQLException, ClassNotFoundException,...",
         "**2. Unchecked Exception** – Xảy ra tại runtime, thường do lỗi logic lập trình. Bao gồm: ArithmeticException, NullPointerException, ArrayIndexOutOfBoundsException,...",
         "**3. Error** – Những lỗi nghiêm trọng vượt ngoài khả năng kiểm soát của lập trình viên. Ví dụ: OutOfMemoryError, VirtualMachineError, AssertionError,...",
@@ -1510,9 +1454,9 @@ const blogs = [
       type: "paragraph",
       text: "Cấu trúc `try-catch` giúp bạn xử lý ngoại lệ mà không để chương trình dừng đột ngột. Đây là phương pháp cơ bản nhất để đảm bảo luồng xử lý an toàn.",
     },
-    {
-      type: "code",
-      language: "java",
+      {
+        type: "code",
+        language: "java",
       code: `try {
   int result = 10 / 0;
 } catch (ArithmeticException e) {
@@ -1521,8 +1465,8 @@ const blogs = [
     },
 
     { type: "heading", text: "2. Throwing Exceptions" },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Khi một điều kiện lỗi xảy ra, bạn có thể ném (throw) một exception để báo cho tầng gọi biết. Từ khóa `throw` được dùng để ném ra exception trong runtime.",
     },
     {
@@ -1699,9 +1643,9 @@ public int divide(int a, int b) {
       type: "paragraph",
       text: "Việc xử lý exception đúng cách giúp ứng dụng ổn định, dễ bảo trì và đáng tin cậy hơn. Hãy nhớ:",
     },
-    {
-      type: "list",
-      items: [
+      {
+        type: "list",
+        items: [
         "Luôn dùng exception cụ thể thay vì Exception tổng quát.",
         "Không nuốt lỗi – nếu không xử lý được, hãy log hoặc ném lại.",
         "Giữ khối try nhỏ và có mục đích rõ ràng.",
@@ -1709,13 +1653,13 @@ public int divide(int a, int b) {
         "Dùng try-with-resources để tự động quản lý tài nguyên.",
       ],
     },
-    {
-      type: "paragraph",
+      {
+        type: "paragraph",
       text: "Một chiến lược exception rõ ràng giúp tăng tính ổn định và khả năng mở rộng của ứng dụng Java. Cảm ơn bạn đã đọc! 😄",
-    },
-  ],
-},
+      },
+    ],
+  },
 ];
 
-export { services, technologies, experiences, testimonials, projects, certificates, blogs };
+export { technologies, projects, testimonials, certificates, blogs };
 
