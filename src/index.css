@@ -270,6 +270,13 @@ body {
 
 /* Removed old gradient classes - replaced with modern gradient system */
 
+
+/* Modal should be above everything with max z-index */
+body > div[style*="2147483647"],
+body > div[style*="2147483647"] * {
+  z-index: 2147483647 !important;
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

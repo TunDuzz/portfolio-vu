@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { certificates } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import Modal from "./Modal";
 
 const CertificateCard = ({
   index,
@@ -19,6 +20,7 @@ const CertificateCard = ({
   verification_link,
 }) => {
   const [showModal, setShowModal] = useState(false);
+
 
   return (
     <>
@@ -91,32 +93,15 @@ const CertificateCard = ({
       </motion.div>
 
       {/* --- MODAL HIỂN THỊ ẢNH CHỨNG CHỈ CHI TIẾT --- */}
-      {showModal && (
-        <div
-          className="fixed inset-0 bg-black/80 backdrop-blur-sm flex justify-center items-center z-[999]"
-          onClick={() => setShowModal(false)}
-        >
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3 }}
-            className="relative bg-white/10 p-4 rounded-2xl shadow-lg max-w-4xl w-full mx-4"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <img
-              src={detail_image || image}
-              alt="certificate_full"
-              className="rounded-xl max-h-[85vh] w-auto mx-auto object-contain"
-            />
-            <button
-              onClick={() => setShowModal(false)}
-              className="absolute top-4 right-4 bg-red-500 hover:bg-red-600 text-white font-bold w-8 h-8 rounded-full flex items-center justify-center transition-all"
-            >
-              ×
-            </button>
-          </motion.div>
+      <Modal isOpen={showModal} onClose={() => setShowModal(false)}>
+        <div className="relative">
+          <img
+            src={detail_image || image}
+            alt="certificate_full"
+            className="rounded-xl max-h-[85vh] w-auto mx-auto object-contain"
+          />
         </div>
-      )}
+      </Modal>
     </>
   );
 };

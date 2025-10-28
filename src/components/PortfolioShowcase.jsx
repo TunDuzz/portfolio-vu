@@ -152,8 +152,9 @@ const CertificateCard = ({
       {/* Modal */}
       {showModal && (
         <div
-          className="fixed inset-0 bg-black/90 backdrop-blur-md flex justify-center items-center z-[999] p-4"
+          className="fixed inset-0 bg-black/90 backdrop-blur-md flex justify-center items-center z-[9998] p-4"
           onClick={() => setShowModal(false)}
+          style={{ zIndex: 9998 }}
         >
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 20 }}
@@ -476,7 +477,7 @@ const PortfolioShowcase = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="flex flex-wrap gap-8 justify-center w-full relative z-10"
+              className="portfolio-showcase flex flex-wrap gap-8 justify-center w-full relative z-10"
             >
               {certificates && Array.isArray(certificates) && certificates.length > 0 ? (
                 certificates.map((certificate, index) => {
@@ -509,7 +510,7 @@ const PortfolioShowcase = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="w-full relative z-10"
+              className="project-cards w-full relative z-10"
             >
               {blogs && Array.isArray(blogs) && blogs.length > 0 ? (
                 <div className="flex flex-wrap gap-8 justify-center">
@@ -545,7 +546,7 @@ const PortfolioShowcase = () => {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.4 }}
-              className="flex flex-row flex-wrap justify-center gap-6 sm:gap-8 w-full relative z-10"
+              className="tech-cards flex flex-row flex-wrap justify-center gap-6 sm:gap-8 w-full relative z-10"
             >
               {technologies && Array.isArray(technologies) && technologies.length > 0 ? (
                 technologies.map((technology, techIndex) => {
