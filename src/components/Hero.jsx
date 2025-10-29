@@ -9,6 +9,7 @@ const Hero = () => {
     <section className={`relative w-full h-screen mx-auto overflow-x-hidden`}>
       <div
         className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        style={{ zIndex: 10 }}
       >
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -93,9 +94,20 @@ const Hero = () => {
       <StarField />
 
       {/* Scroll button with highest z-index */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center' style={{ zIndex: 9999, pointerEvents: 'none' }}>
-        <a href='#about' className='pointer-events-auto'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 pointer-events-auto'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center' style={{ zIndex: 20 }}>
+        <button 
+          onClick={() => {
+            const aboutSection = document.getElementById('about');
+            if (aboutSection) {
+              aboutSection.scrollIntoView({ 
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }}
+          className='pointer-events-auto cursor-pointer hover:scale-110 transition-transform duration-300'
+        >
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 pointer-events-auto hover:border-[#915EFF] transition-colors duration-300'>
             <motion.div
               animate={{
                 y: [0, 24, 0],
@@ -108,7 +120,7 @@ const Hero = () => {
               className='w-3 h-3 rounded-full bg-secondary mb-1'
             />
           </div>
-        </a>
+        </button>
       </div>
     </section>
   );

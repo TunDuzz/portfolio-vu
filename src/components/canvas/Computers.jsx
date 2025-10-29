@@ -60,11 +60,13 @@ const ComputersCanvas = () => {
       dpr={[1.5, 3]}
       camera={{ position: [15, 2, 4], fov: 45 }}
       gl={{ preserveDrawingBuffer: true }}
-      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 1, pointerEvents: 'auto' }}
+      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: 0, pointerEvents: 'none' }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
+          enableRotate={!isMobile}
+          enablePan={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

@@ -65,7 +65,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <div id="contact">
       <div
         className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
       >
@@ -418,7 +418,7 @@ const Contact = () => {
      </div>
    </div>
  </motion.div>
-    </>
+    </div>
   );
 };
 

@@ -29,7 +29,7 @@ const fadeIn = (direction, type, delay, duration) => ({
 
 const About = () => {
   return (
-    <div className="w-full min-h-screen bg-primary py-20 px-6 sm:px-16">
+    <div id="about" className="w-full min-h-screen bg-primary py-20 px-6 sm:px-16">
       {/* Header Section */}
       <motion.div variants={textVariant()} className="text-center relative mb-16">
         {/* Background glow effect */}

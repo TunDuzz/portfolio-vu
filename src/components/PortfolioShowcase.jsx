@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Tilt from "react-parallax-tilt";
 
@@ -22,6 +22,22 @@ const CertificateCard = ({
   verification_link,
 }) => {
   const [showModal, setShowModal] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (event) => {
+      setIsMobile(event.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
 
   return (
     <>
@@ -29,12 +45,13 @@ const CertificateCard = ({
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: index * 0.1, duration: 0.6, ease: "easeOut" }}
-        whileHover={{ y: -8 }}
+        whileHover={!isMobile ? { y: -8 } : {}}
       >
         <Tilt
+          tiltEnable={!isMobile}
           tiltMaxAngleX={12}
           tiltMaxAngleY={12}
-          scale={1.03}
+          scale={isMobile ? 1 : 1.03}
           transitionSpeed={400}
           className="bg-gradient-to-br from-tertiary via-tertiary to-black-200/50 p-6 rounded-3xl 
             sm:w-[360px] w-full shadow-xl hover:shadow-2xl hover:shadow-[#915EFF]/40
