@@ -7,6 +7,7 @@ import { SectionWrapper } from "../hoc";
 import { certificates, technologies, blogs } from "../constants";
 import { textVariant } from "../utils/motion";
 import Modal from "./Modal";
+import StarField from "./StarField";
 
 // Certificate Card Component
 const CertificateCard = ({
@@ -697,6 +698,9 @@ const PortfolioShowcase = () => {
           </div>
         )}
       </Modal>
+      
+      {/* StarField background */}
+      <StarField />
     </>
   );
 };

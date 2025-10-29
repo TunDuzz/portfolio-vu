@@ -117,19 +117,6 @@ const projects = [
     ],
   },
   {
-    title: "Portfolio Website",
-    company_name: "React.js + Three.js + Tailwind CSS",
-    icon: reactjs,
-    iconBg: "#383E56",
-    date: "Dec 2024 - Present",
-    points: [
-      "Xây dựng portfolio website tương tác với React.js và Three.js cho hiệu ứng 3D.",
-      "Sử dụng Tailwind CSS để tạo giao diện responsive và hiện đại.",
-      "Tích hợp Framer Motion cho animation mượt mà và trải nghiệm người dùng tốt.",
-      "Tối ưu hóa performance và SEO cho website cá nhân.",
-    ],
-  },
-  {
     title: "Gomoku Online Game",
     company_name: "ASP.NET Core SignalR + ReactJS",
     icon: nodejs,
@@ -166,6 +153,19 @@ const projects = [
       "Xây dựng REST API với Spring Boot và kết nối cơ sở dữ liệu MySQL.",
       "Thực hành xử lý đa luồng, đồng bộ hóa và thuật toán mã hóa trong Java.",
       "Tạo mini projects mô phỏng FTP và Chat Socket để học networking concepts.",
+    ],
+  },
+  {
+    title: "Portfolio Website",
+    company_name: "React.js + Three.js + Tailwind CSS",
+    icon: reactjs,
+    iconBg: "#383E56",
+    date: "Dec 2024 - Present",
+    points: [
+      "Xây dựng portfolio website tương tác với React.js và Three.js cho hiệu ứng 3D.",
+      "Sử dụng Tailwind CSS để tạo giao diện responsive và hiện đại.",
+      "Tích hợp Framer Motion cho animation mượt mà và trải nghiệm người dùng tốt.",
+      "Tối ưu hóa performance và SEO cho website cá nhân.",
     ],
   },
 ];

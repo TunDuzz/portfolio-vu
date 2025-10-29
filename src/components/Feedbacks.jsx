@@ -5,6 +5,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+import StarField from "./StarField";
 
 const InspirationCard = ({
   index,
@@ -95,6 +96,9 @@ const Inspirations = () => {
           <InspirationCard key={testimonial.name} index={index} {...testimonial} />
         ))}
       </div>
+      
+      {/* StarField background */}
+      <StarField />
     </div>
   );
 };
