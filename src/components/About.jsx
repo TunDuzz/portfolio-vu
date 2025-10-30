@@ -311,20 +311,10 @@ const About = () => {
       <div className="max-w-7xl mx-auto relative">
         {/* Section title */}
         <div className="text-center mb-12">
-          <motion.h3
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="text-[32px] sm:text-[40px] font-bold mb-3
-              bg-gradient-to-r from-[#915EFF] via-[#7c3aed] to-[#00BFFF] 
-              bg-clip-text text-transparent"
-          >
-            Thành tựu của tôi
-          </motion.h3>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2 }}
-            className="h-1 w-24 mx-auto bg-gradient-to-r from-transparent via-[#915EFF] to-transparent rounded-full"
           />
         </div>
 
@@ -334,8 +324,8 @@ const About = () => {
         <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {[
             { number: "4+", label: "Năm đại học", icon: "🎓", gradient: "from-blue-500 to-cyan-500", delay: 0.2 },
-            { number: "10+", label: "Dự án học tập & cá nhân", icon: "💻", gradient: "from-purple-500 to-pink-500", delay: 0.3 },
-            { number: "5+", label: "Dự án nhóm thực hiện", icon: "🚀", gradient: "from-orange-500 to-red-500", delay: 0.4 },
+            { number: "6+", label: "Dự án học tập & cá nhân", icon: "💻", gradient: "from-purple-500 to-pink-500", delay: 0.3 },
+            { number: "4+", label: "Dự án nhóm thực hiện", icon: "🚀", gradient: "from-orange-500 to-red-500", delay: 0.4 },
             { number: "100%", label: "Tinh thần học hỏi", icon: "⚡", gradient: "from-green-500 to-emerald-500", delay: 0.5 }
           ].map((stat, index) => (
             <motion.div

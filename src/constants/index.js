@@ -131,15 +131,15 @@ const projects = [
   },
   {
     title: "Noctune Music Platform",
-    company_name: "React.js + Tailwind CSS + Music API",
+    company_name: "ASP.NET MVC + SQL Server + Tailwind CSS",
     icon: javascript,
     iconBg: "#383E56",
     date: "Oct 2024 - Dec 2024",
     points: [
-      "Phát triển giao diện người dùng cho nền tảng âm nhạc sử dụng React.js và Tailwind CSS.",
-      "Tích hợp API âm nhạc và xây dựng các tính năng phát nhạc, playlist, và tìm kiếm.",
-      "Tối ưu hóa trải nghiệm người dùng với animation mượt mà và responsive design.",
-      "Làm việc với team để đảm bảo tích hợp frontend-backend hoàn hảo.",
+      "Phát triển nền tảng nghe nhạc cá nhân hoá sử dụng ASP.NET MVC, kết hợp SQL Server để quản lý dữ liệu bài hát, nghệ sĩ và playlist.",
+      "Xây dựng giao diện người dùng hiện đại với Tailwind CSS, hỗ trợ phát nhạc, tìm kiếm, và danh sách phát.",
+      "Tối ưu hiệu năng và trải nghiệm người dùng thông qua kiến trúc MVC rõ ràng, responsive design và hiệu ứng động nhẹ.",
+      "Toàn bộ dự án được thực hiện cá nhân — từ thiết kế, xây dựng API, đến tích hợp giao diện và triển khai.",
     ],
   },
   {
@@ -147,7 +147,7 @@ const projects = [
     company_name: "Java 8+ + Spring Boot + MySQL",
     icon: java,
     iconBg: "#E6DEDD",
-    date: "Aug 2024 - Nov 2024",
+    date: "Sep 2024 - Oct 2025",
     points: [
       "Phát triển các ứng dụng Java sử dụng Collections Framework và Stream API.",
       "Xây dựng REST API với Spring Boot và kết nối cơ sở dữ liệu MySQL.",
@@ -160,7 +160,7 @@ const projects = [
     company_name: "React.js + Three.js + Tailwind CSS",
     icon: reactjs,
     iconBg: "#383E56",
-    date: "Dec 2024 - Present",
+    date: "Oct 2025 - Present",
     points: [
       "Xây dựng portfolio website tương tác với React.js và Three.js cho hiệu ứng 3D.",
       "Sử dụng Tailwind CSS để tạo giao diện responsive và hiện đại.",

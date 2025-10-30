@@ -41,7 +41,7 @@ const Hero = () => {
                 <span className="block text-[32px] sm:text-[50px] lg:text-[60px] font-black leading-tight
                   bg-gradient-to-r from-[#915EFF] via-[#7c3aed] to-[#00BFFF] 
                   bg-clip-text text-transparent break-words">
-                  Thế giới Code của tôi
+                  Không Gian Sáng Tạo Của Tôi
                 </span>
               </h1>
               <div className="mt-2 h-1 w-32 bg-gradient-to-r from-transparent via-[#915EFF] to-transparent rounded-full" />
@@ -56,9 +56,9 @@ const Hero = () => {
             className="mt-6 space-y-3 w-full relative z-10"
           >
             <p className={`${styles.heroSubText} text-white/90 leading-relaxed break-words`}>
-              Chào mừng bạn đến với <span className="text-[#61DAFB] font-semibold">thế giới lập trình</span> của tôi
+              Nơi <span className="text-[#915EFF] font-semibold">kỹ thuật</span> và <span className="text-[#915EFF] font-semibold">thiết kế</span> hòa quyện,
               <br className='sm:block hidden' />
-              Nơi <span className="text-[#915EFF] font-semibold">ý tưởng</span> trở thành <span className="text-[#915EFF] font-semibold">hiện thực</span>
+              tạo nên những <span className="text-[#61DAFB] font-semibold">trải nghiệm số hiện đại.</span>
             </p>
             
             {/* Call to action */}
@@ -94,8 +94,8 @@ const Hero = () => {
       <StarField />
 
       {/* Scroll button with highest z-index */}
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center' style={{ zIndex: 20 }}>
-        <button 
+      <div className='absolute xs:bottom-12 bottom-32 w-full flex justify-center items-center' style={{ zIndex: 20 }}>
+        <button  
           onClick={() => {
             const aboutSection = document.getElementById('about');
             if (aboutSection) {
